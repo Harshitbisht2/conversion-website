@@ -2,29 +2,33 @@
 <html>
     <head>
         <title>Unit Conversions</title>
+        <link rel="stylesheet" href="conversion.css">
     </head>
     <body>
         <section id="home">
             <!-- This is the main heading. -->
             <header><b>Unit Conversions</b></header>
             <nav>
-                <!-- This will have the main unit conversion buttons -->
+                <div class="topdiv">
 
-                <!-- Button for redirecting users to the temperature section -->
-                <a href="#temperature"><button>Temperature</button></a>
+                    <!-- This will have the main unit conversion buttons -->
 
-                <!-- Button for redirecting users to the weight section -->
-                <a href="#weight"><button>Weight</button></a>
+                    <!-- Button for redirecting users to the temperature section -->
+                    <a href="#temperature"><button>Temperature</button></a>
 
-                <!-- Button for redirecting users to the distance section -->
-                <a href="#distance"><button>Distance</button></a>
+                    <!-- Button for redirecting users to the weight section -->
+                    <a href="#weight"><button>Weight</button></a>
+
+                    <!-- Button for redirecting users to the distance section -->
+                    <a href="#distance"><button>Distance</button></a>
+                </div>
             </nav>
         </section>
 
         <div id="all-conversion-sections">
             <!-- This will have the conversion section for Temperature, Weight, and Distance -->
             
-            <section id="temperature">
+            <section id="temperature" class="b temperature">
             <!-- Temperature conversion section -->
             
                 <div id="tmp">
@@ -58,7 +62,7 @@
                 </div>
             </section>
 
-            <section id="weight">
+            <section id="weight" class="b weight">
                 <!-- Weight conversion section -->
                 
                     <div id="wgt">
@@ -92,7 +96,7 @@
                     </div>
             </section>
 
-            <section id="distance">
+            <section id="distance" class="b distance">
                 <!-- Distance conversion section -->
                 
                     <div id="dst">
@@ -118,15 +122,24 @@
                                 <label for="miles">Miles</label>
                                 
                             </fieldset>
-                        </article>
-                        <aside>
-                            To convert kilometers to miles. yourself, use this replacing the 'km' with your distance in kilometers: km/1.609
-                        </aside>
-                        
+                            <aside>
+                                To convert kilometers to miles. yourself, use this replacing the 'km' with your distance in kilometers: km/1.609
+                            </aside>
+                        </article> 
                     </div>
             </section>
-
-                
+            <div style="clear:both;"></div>
         </div>
+
+            <div id="go-home" class="iconbutton">
+                <a href="#home">
+                    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/home.svg"/>
+                </a>
+            </div>  
+            
+            <footer>
+                harshitbishtofficial2@gmail.com
+            </footer>
+
     </body>
 </html>
